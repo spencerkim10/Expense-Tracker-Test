@@ -20,7 +20,7 @@ class Dashboard:
         st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
     def load_data(self, client, **kwargs):
-        df = pd.read_csv('G:\My Drive\Moyer Equipment\WebApp\moyer_censored.csv')
+        df = pd.read_csv('moyer_censored.csv')
         df = df.loc[df['Client'] == client]
         df['Date'] = pd.to_datetime(df['Date'], format='%m/%d/%Y')
         df['Year'] = df['Date'].dt.year
