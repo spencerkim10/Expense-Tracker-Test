@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    test1:
+      email: jsmith@gmail.com
+      name: Test 1
+      password: $2b$12$0DZtFOHh5PTgA.WNnlvYB.9Ozdx/uvvxk89DzBbv5GWTID.X8l8km # test1
+    test2:
+      email: rbriggs@gmail.com
+      name: Test 2
+      password: $2b$12$dvep7iNevapZVeTMGaGSo.b62femx3a4BA2brhH.NT1T.pO0Bfc5a # test2
+cookie:
+  expiry_days: 30
+  key: random_signature_key # Must be string
+  name: random_cookie_name
+preauthorized:
+  emails:
+  - melsby@gmail.com
