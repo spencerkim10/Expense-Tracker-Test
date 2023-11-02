@@ -27,9 +27,9 @@ name, authentication_status, username = authenticator.login('Login', 'main')
 
 if authentication_status:
     authenticator.logout('Logout', 'sidebar')
-    with st.spinner("Downloading data..."):
-        db = Dashboard("Test Client")
-        db.generate_dashbord()
+
+    db = Dashboard("Test Client")
+    db.generate_dashbord()
 
 elif authentication_status == False:
     st.error('Username/password is incorrect')
