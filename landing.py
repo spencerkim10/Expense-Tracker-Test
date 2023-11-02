@@ -8,6 +8,8 @@ from yaml.loader import SafeLoader
 
 st.set_page_config(layout="wide")
 
+st.header("Moyer Equipment Repair LLC")
+
 with open('login.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
 
