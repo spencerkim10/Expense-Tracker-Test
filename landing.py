@@ -8,7 +8,7 @@ from yaml.loader import SafeLoader
 
 st.set_page_config(layout="wide")
 
-with open('G:\My Drive\Moyer Equipment\WebApp\login.yaml') as file:
+with open('login.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
 
 hashed_passwords = stauth.Hasher(['test1', 'test2']).generate()
