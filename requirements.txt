@@ -1,0 +1,5 @@
+streamlit
+pandas
+streamlit_authenticator
+calendar
+datetime
